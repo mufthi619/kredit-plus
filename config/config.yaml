@@ -1,0 +1,32 @@
+app:
+  name: kredit-plus
+  version: 1.0.0
+  environment: development
+  port: 8080
+
+mysql:
+  host: localhost
+  port: 3306
+  user: root
+  password: pass2login
+  database: kredit_plus
+  max_open_conns: 100
+  max_idle_conns: 10
+  max_lifetime: 1h
+  debug: true
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+
+logger:
+  level: debug
+  environment: development
+
+telemetry:
+  service_name: kredit-plus
+  service_version: 1.0.0
+  environment: development
+  otlp_endpoint: localhost:4317
